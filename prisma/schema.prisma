@@ -1,0 +1,91 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model StudySession {
+  id              String   @id @default(cuid())
+  startedAt       DateTime
+  endedAt         DateTime
+  durationSeconds Int
+  courseId        String?
+  createdAt       DateTime @default(now())
+
+  course Course? @relation(fields: [courseId], references: [id], onDelete: SetNull)
+
+  @@index([startedAt])
+  @@index([endedAt])
+  @@index([courseId])
+}
+
+model Course {
+  id            String    @id @default(cuid())
+  name          String
+  platform      String
+  url           String?
+  instructor    String?
+  category      String?
+  officialHours Float?
+  startedAt     DateTime?
+  completedAt   DateTime?
+  status        String    @default("not_started")
+  priority      String    @default("medium")
+  rating        Int?
+  notes         String    @default("")
+  tags          String    @default("[]")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  sessions    StudySession[]
+  courseNotes CourseNote[]
+  attachments CourseAttachment[]
+}
+
+model CourseNote {
+  id        String   @id @default(cuid())
+  courseId  String
+  title     String
+  content   String   @default("")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  course      Course             @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  attachments CourseAttachment[]
+
+  @@index([courseId])
+}
+
+model CourseAttachment {
+  id         String   @id @default(cuid())
+  courseId   String
+  noteId     String?
+  fileName   String
+  mimeType   String
+  sizeBytes  Int
+  storageKey String
+  createdAt  DateTime @default(now())
+
+  course Course      @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  note   CourseNote? @relation(fields: [noteId], references: [id], onDelete: SetNull)
+
+  @@index([courseId])
+  @@index([noteId])
+}
+
+model AppSettings {
+  id                 String    @id @default("default")
+  weeklyGoalHours    Float     @default(20)
+  theme              String    @default("system")
+  alwaysOnTop        Boolean   @default(false)
+  launchOnStartup    Boolean   @default(false)
+  backupFolderPath   String?
+  backupOnQuit       Boolean   @default(false)
+  autoBackupDaily    Boolean   @default(true)
+  lastAutoBackupAt   DateTime?
+  updatedAt          DateTime  @updatedAt
+}

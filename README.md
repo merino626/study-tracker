@@ -62,21 +62,29 @@ Installer options: choose the install directory, desktop shortcut and Start Menu
 
 ## Screenshots
 
-<!--
-  Add your screenshots to docs/screenshots/ and uncomment the block below.
-  Suggested captures: dashboard.png, timer-compact.png, courses.png,
-  course-detail.png, statistics.png, settings.png
+### Compact timer mode
 
-| Dashboard | Compact timer |
-|-----------|---------------|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Compact timer](docs/screenshots/timer-compact.png) |
+Starting the timer collapses the window into a 340x160 widget docked to the bottom-right corner of the
+screen, so the elapsed time stays visible without covering what you are studying. Finishing the session
+restores the window and saves the record.
 
-| Courses | Statistics |
-|---------|------------|
-| ![Courses](docs/screenshots/courses.png) | ![Statistics](docs/screenshots/statistics.png) |
--->
+![Compact timer mode](docs/screenshots/timer-compact.gif)
 
-_Screenshots coming soon — drop your PNGs in [`docs/screenshots/`](docs/screenshots/) and uncomment the gallery in this file._
+### The app
+
+|                                            Dashboard                                            |                                        Courses                                         |
+| :---------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| ![Dashboard](docs/screenshots/dashboard.png)<br>_Timer, period totals and weekly-goal progress_ | ![Courses](docs/screenshots/courses.png)<br>_Status, priority and progress per course_ |
+
+|                                          Course notebook                                           |                                       Statistics                                        |
+| :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| ![Course notebook](docs/screenshots/course-notebook.png)<br>_Markdown notes with file attachments_ | ![Statistics](docs/screenshots/statistics.png)<br>_Totals per period and insight cards_ |
+
+|                               Session history                                |                                           Backup and restore                                           |
+| :--------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| ![History](docs/screenshots/history.png)<br>_Every session, editable inline_ | ![Backup](docs/screenshots/settings-backup.png)<br>_Backup folder, automatic backups and version list_ |
+
+_The interface is in Brazilian Portuguese. Screenshots use sample data._
 
 ---
 

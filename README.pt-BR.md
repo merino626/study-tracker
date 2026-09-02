@@ -62,21 +62,29 @@ O instalador permite escolher a pasta de instalação e criar atalhos na área d
 
 ## Capturas de tela
 
-<!--
-  Coloque suas capturas em docs/screenshots/ e descomente o bloco abaixo.
-  Sugestões: dashboard.png, timer-compact.png, courses.png,
-  course-detail.png, statistics.png, settings.png
+### Modo compacto do cronômetro
 
-| Dashboard | Cronômetro compacto |
-|-----------|---------------------|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Cronômetro compacto](docs/screenshots/timer-compact.png) |
+Ao iniciar o cronômetro, a janela encolhe para um widget de 340x160 fixado no canto inferior direito da
+tela, deixando o tempo visível sem cobrir o que você está estudando. Ao finalizar, a janela volta ao
+tamanho normal e a sessão é salva.
 
-| Cursos | Estatísticas |
-|--------|--------------|
-| ![Cursos](docs/screenshots/courses.png) | ![Estatísticas](docs/screenshots/statistics.png) |
--->
+![Modo compacto do cronômetro](docs/screenshots/timer-compact.gif)
 
-_Capturas em breve — coloque seus PNGs em [`docs/screenshots/`](docs/screenshots/) e descomente a galeria neste arquivo._
+### O aplicativo
+
+|                                            Dashboard                                            |                                          Cursos                                           |
+| :---------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| ![Dashboard](docs/screenshots/dashboard.png)<br>_Cronômetro, totais por período e meta semanal_ | ![Cursos](docs/screenshots/courses.png)<br>_Status, prioridade e progresso de cada curso_ |
+
+|                                        Caderno do curso                                         |                                         Estatísticas                                         |
+| :---------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| ![Caderno do curso](docs/screenshots/course-notebook.png)<br>_Anotações em Markdown com anexos_ | ![Estatísticas](docs/screenshots/statistics.png)<br>_Totais por período e cards de destaque_ |
+
+|                                Histórico de sessões                                 |                                        Backup e restauração                                         |
+| :---------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| ![Histórico](docs/screenshots/history.png)<br>_Todas as sessões, editáveis na hora_ | ![Backup](docs/screenshots/settings-backup.png)<br>_Pasta de backup, backups automáticos e versões_ |
+
+_Os dados das capturas são de demonstração._
 
 ---
 

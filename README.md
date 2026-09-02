@@ -16,7 +16,9 @@
 
 **English** · [Português (BR)](README.pt-BR.md)
 
-### [⬇️ Download for Windows](https://github.com/merino626/study-tracker/releases/latest)
+### [⬇️ Download for Windows](https://github.com/merino626/study-tracker/releases/download/v1.0.0/Study.Tracker-Setup-1.0.0.exe)
+
+<sub>Version 1.0.0 · Windows 10/11 (x64) · ~126 MB installer · [all releases](https://github.com/merino626/study-tracker/releases/latest)</sub>
 
 </div>
 
@@ -43,10 +45,12 @@
 
 ## Download
 
-| Platform                | File                                                                                        | Link                                                                                      |
-| ----------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **Windows 10/11 (x64)** | `Study Tracker-Setup-1.0.0.exe` (NSIS installer)                                            | **[Download latest release](https://github.com/merino626/study-tracker/releases/latest)** |
-| macOS / Linux           | `.dmg` / `.AppImage` targets are configured in `electron-builder.yml` but not published yet | [Build it yourself](#production-build)                                                    |
+| Platform                | File                                                                                        | Download                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Windows 10/11 (x64)** | `Study Tracker-Setup-1.0.0.exe` — NSIS installer, ~126 MB                                   | **[⬇️ Direct download](https://github.com/merino626/study-tracker/releases/download/v1.0.0/Study.Tracker-Setup-1.0.0.exe)** |
+| macOS / Linux           | `.dmg` / `.AppImage` targets are configured in `electron-builder.yml` but not published yet | [Build it yourself](#production-build)                                                                                      |
+
+Release notes: **[v1.0.0](https://github.com/merino626/study-tracker/releases/tag/v1.0.0)** · every version: [releases page](https://github.com/merino626/study-tracker/releases/latest)
 
 > The installer is unsigned (no paid code-signing certificate), so Windows SmartScreen may show a
 > _"Windows protected your PC"_ warning. Click **More info → Run anyway**, or build from source with
